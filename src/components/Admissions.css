@@ -1,0 +1,512 @@
+.admissions-section {
+  padding: 120px 20px;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.background-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 10% 20%, rgba(30, 60, 114, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 90% 80%, rgba(42, 82, 152, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 50% 50%, rgba(255, 215, 0, 0.03) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.section-title {
+  font-size: 48px;
+  font-weight: 800;
+  color: #1e3c72;
+  margin-bottom: 20px;
+  text-shadow: none;
+}
+
+.section-subtitle {
+  font-size: 26px;
+  line-height: 1.8;
+  color: #5a6c7d;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  text-shadow: none;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Two-column layout shell */
+.admissions-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: stretch;
+  margin: 24px auto 0;
+  max-width: 1120px;
+}
+
+.admissions-left,
+.admissions-right {
+  background: #ffffff;
+  border-radius: 28px;
+  padding: 28px 24px;
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.35);
+  backdrop-filter: blur(10px);
+}
+
+.admissions-right {
+  background: #ffffff;
+}
+
+.subsection-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1e3c72;
+  margin-bottom: 20px;
+  text-align: left;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.admissions-left .subsection-title,
+.admissions-right .subsection-title {
+  padding-left: 2px;
+}
+
+.overview-intro {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #5a6c7d;
+  max-width: 640px;
+  margin: 0 auto 28px;
+  text-align: center;
+}
+
+.admission-overview {
+  margin-bottom: 40px;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.benefit-card {
+  background: #ffffff;
+  border: 1px solid rgba(30, 60, 114, 0.12);
+  border-radius: 20px;
+  padding: 35px 30px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+.benefit-card:hover {
+  transform: translateZ(0) translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.benefit-icon {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.benefit-card h4 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1e3c72;
+  margin-bottom: 15px;
+}
+
+.benefit-card p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #2c3e50;
+}
+
+.admission-process {
+  margin-bottom: 48px;
+}
+
+.process-timeline {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+}
+
+.process-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 20px 18px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(30, 60, 114, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.process-step:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+  border-color: rgba(30, 60, 114, 0.2);
+}
+
+.step-number {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(45deg, #ffd700, #ffed4e);
+  color: #1e3c72;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 800;
+  flex-shrink: 0;
+  box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
+}
+
+.step-content {
+  flex: 1;
+}
+
+.step-icon {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.step-content h4 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1e3c72;
+  margin-bottom: 10px;
+}
+
+.step-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #5a6c7d;
+}
+
+.admission-form-section {
+  margin-bottom: 40px;
+}
+
+.form-container {
+  max-width: 800px;
+  margin: 0;
+}
+
+.admission-form {
+  background: #ffffff;
+  border: 1px solid rgba(30, 60, 114, 0.15);
+  border-radius: 30px;
+  padding: 50px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+.form-subtitle {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #5a6c7d;
+  text-align: center;
+  max-width: 480px;
+  margin: 0 auto 24px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.admission-form .form-group label {
+  color: #1e3c72;
+  font-weight: 600;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.admission-form .form-group input,
+.admission-form .form-group select,
+.admission-form .form-group textarea {
+  background: #f8f9fa;
+  border: 1px solid rgba(30, 60, 114, 0.25);
+  border-radius: 15px;
+  padding: 18px 20px;
+  color: #1e3c72;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.admission-form .form-group input::placeholder,
+.admission-form .form-group textarea::placeholder {
+  color: #5a6c7d;
+}
+
+.admission-form .form-group input:focus,
+.admission-form .form-group select:focus,
+.admission-form .form-group textarea:focus {
+  outline: none;
+  border-color: #ffd700;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.25);
+}
+
+.form-group select {
+  cursor: pointer;
+}
+
+.form-group select option {
+  background: #1e3c72;
+  color: white;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+  font-family: inherit;
+}
+
+.submit-btn {
+  background: linear-gradient(45deg, #ffd700, #ffed4e);
+  color: #1e3c72;
+  border: none;
+  padding: 20px 40px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  width: 100%;
+  box-shadow: 0 10px 30px rgba(255, 215, 0, 0.4);
+}
+
+.submit-btn:hover {
+  background: linear-gradient(45deg, #ffed4e, #ffd700);
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(255, 215, 0, 0.5);
+}
+
+.requirements-section {
+  margin-bottom: 40px;
+}
+
+.requirements-list {
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+.requirement-item {
+  background: #ffffff;
+  border: 1px solid rgba(30, 60, 114, 0.12);
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+.requirement-item:hover {
+  transform: translateZ(0) translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.check-icon {
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(45deg, #ffd700, #ffed4e);
+  color: #1e3c72;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.requirement-item span {
+  color: #1e3c72;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.contact-info {
+  margin-bottom: 0;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.admissions-section .contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  background: #ffffff;
+  border: 1px solid rgba(30, 60, 114, 0.12);
+  border-radius: 20px;
+  padding: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+.admissions-section .contact-item:hover {
+  transform: translateZ(0) translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.admissions-section .contact-icon {
+  font-size: 32px;
+  flex-shrink: 0;
+}
+
+.admissions-section .contact-item h4 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1e3c72;
+  margin-bottom: 10px;
+}
+
+.admissions-section .contact-item p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #2c3e50;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .admissions-section {
+    padding: 80px 20px;
+  }
+
+  .admissions-left,
+  .admissions-right {
+    padding: 20px 18px;
+  }
+  
+  .section-title {
+    font-size: 36px;
+  }
+  
+  .subsection-title {
+    font-size: 28px;
+  }
+  
+  .section-subtitle {
+    font-size: 18px;
+  }
+  
+  .benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .benefit-card {
+    padding: 25px 20px;
+  }
+  
+  .process-timeline {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .process-step {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+  
+  .admission-form {
+    padding: 40px 30px;
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .requirements-list {
+    grid-template-columns: 1fr;
+  }
+  
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 28px;
+  }
+  
+  .subsection-title {
+    font-size: 24px;
+  }
+  
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .benefit-card {
+    padding: 20px;
+  }
+  
+  .admission-form {
+    padding: 30px 20px;
+  }
+  
+  .admissions-section .contact-item {
+    padding: 25px 20px;
+  }
+}

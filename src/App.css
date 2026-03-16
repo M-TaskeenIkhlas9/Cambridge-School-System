@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  overflow-x: hidden;
+  background: #fafafa;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.App {
+  min-height: 100vh;
+}
+
+/* Responsive typography */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Utility classes */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Button hover effects */
+button:hover {
+  cursor: pointer;
+}
+
+/* Image responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Link styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Crisp card and text rendering - prevents blur from GPU/compositing */
+.struggling-areas .container,
+.struggling-areas .section-subtitle,
+.struggling-areas .stat-card,
+.struggling-areas .area-card,
+.admissions-section .section-subtitle,
+.admissions-section .benefit-card,
+.admissions-section .admission-form,
+.admissions-section .requirement-item,
+.admissions-section .contact-item,
+.contact-form-section .form-container,
+.header,
+.hero-stats .stat-item {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: geometricPrecision;
+}
+
+/* Scroll animations */
+.scroll-animate {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+
+.scroll-animate.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Loading animation */
+.loading {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(30, 60, 114, 0.3);
+  border-radius: 50%;
+  border-top-color: #1e3c72;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #1e3c72, #2a5298);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, #162a4a, #1e3c72);
+}
+
+/* Selection colors */
+::selection {
+  background: rgba(30, 60, 114, 0.2);
+  color: #1e3c72;
+}
+
+/* Focus styles */
+button:focus,
+input:focus,
+textarea:focus,
+a:focus {
+  outline: 2px solid #1e3c72;
+  outline-offset: 2px;
+}
+
+/* Crisp card and text rendering - prevents blur from GPU/compositing */
+.stat-card,
+.area-card,
+.benefit-card,
+.form-container,
+.admission-form,
+.requirement-item,
+.contact-item,
+.stat-item,
+.form-container .form-group label,
+.form-container .form-group input,
+.form-container .form-group textarea,
+.admission-form .form-group label,
+.admission-form .form-group input,
+.admission-form .form-group select,
+.admission-form .form-group textarea {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: geometricPrecision;
+}

@@ -1,0 +1,256 @@
+.can-do-learner {
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.can-do-learner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #2ecc71, #3498db, #ff6b35, #ffd700);
+  animation: gradientShift 3s ease-in-out infinite;
+}
+
+@keyframes gradientShift {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(10px); }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.section-title {
+  font-size: 48px;
+  font-weight: 800;
+  color: #2c3e50;
+  margin-bottom: 25px;
+  line-height: 1.2;
+}
+
+.highlight {
+  background: linear-gradient(45deg, #1e3c72, #2a5298);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  position: relative;
+}
+
+.highlight::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(45deg, #1e3c72, #2a5298);
+  border-radius: 2px;
+}
+
+.section-description {
+  font-size: 20px;
+  line-height: 1.7;
+  color: #5a6c7d;
+  max-width: 800px;
+  margin: 0 auto;
+  font-weight: 400;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.image-section {
+  position: relative;
+}
+
+.mountain-image {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  transition: transform 0.4s ease;
+}
+
+.mountain-image:hover {
+  transform: translateY(-10px);
+}
+
+.mountain-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.6s ease;
+}
+
+.mountain-image:hover img {
+  transform: scale(1.05);
+}
+
+.mountain-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(46, 204, 113, 0.1) 0%, rgba(52, 152, 219, 0.1) 100%);
+  z-index: 1;
+}
+
+.qualities-section {
+  position: relative;
+}
+
+.qualities-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.quality-card {
+  background: white;
+  border-radius: 20px;
+  padding: 35px 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border: 1px solid rgba(46, 204, 113, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.quality-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #2ecc71, #3498db);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.quality-card:hover::before {
+  transform: scaleX(1);
+}
+
+.quality-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  border-color: rgba(46, 204, 113, 0.3);
+}
+
+.quality-icon-wrapper {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.quality-card:hover .quality-icon-wrapper {
+  transform: rotate(5deg) scale(1.1);
+}
+
+.quality-icon {
+  font-size: 32px;
+  filter: brightness(0) invert(1);
+}
+
+.quality-content {
+  flex: 1;
+}
+
+.quality-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+
+.quality-description {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #5a6c7d;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .can-do-learner {
+    padding: 60px 20px;
+  }
+  
+  .section-title {
+    font-size: 36px;
+  }
+  
+  .section-description {
+    font-size: 18px;
+  }
+  
+  .content-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  
+  .qualities-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  
+  .quality-card {
+    padding: 30px 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 28px;
+  }
+  
+  .section-description {
+    font-size: 16px;
+  }
+  
+  .quality-card {
+    padding: 25px 20px;
+  }
+  
+  .quality-icon-wrapper {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .quality-icon {
+    font-size: 28px;
+  }
+  
+  .quality-title {
+    font-size: 20px;
+  }
+  
+  .quality-description {
+    font-size: 15px;
+  }
+}
