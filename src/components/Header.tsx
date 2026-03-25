@@ -35,7 +35,7 @@ const Header: React.FC = () => {
         </nav>
         
         <div className="contact-info">
-          <span className="phone">+92-321-1234567</span>
+          <span className="phone">03074511321</span>
           <Link to="/admissions" className="consultation-btn">
             Apply Now
           </Link>
@@ -88,7 +88,7 @@ const Header: React.FC = () => {
           </ul>
 
           <div className="mobile-nav-cta">
-            <span className="phone">+92-321-1234567</span>
+            <span className="phone">03074511321</span>
             <Link to="/admissions" className="consultation-btn" onClick={closeMenu}>
               Apply Now
             </Link>
