@@ -4,25 +4,25 @@ import './Tutors.css';
 const Tutors: React.FC = () => {
   const tutors = [
     {
-      name: "Sarah Johnson",
+      name: "Ayesha Malik",
       role: "Math Specialist",
       image: "https://picsum.photos/seed/sarah/200/200.jpg",
       bio: "10+ years experience in mathematics education"
     },
     {
-      name: "Michael Chen",
+      name: "Muhammad Bilal",
       role: "Reading & Writing Coach",
       image: "https://picsum.photos/seed/michael/200/200.jpg",
       bio: "Expert in literacy development and creative writing"
     },
     {
-      name: "Emily Rodriguez",
+      name: "Fatima Zahra",
       role: "Science Tutor",
       image: "https://picsum.photos/seed/emily/200/200.jpg",
       bio: "Passionate about making science engaging and accessible"
     },
     {
-      name: "David Thompson",
+      name: "Bilal Ahmad",
       role: "Study Skills Coach",
       image: "https://picsum.photos/seed/david/200/200.jpg",
       bio: "Specializes in executive functioning and organization"
