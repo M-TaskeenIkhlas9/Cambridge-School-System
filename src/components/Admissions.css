@@ -2,7 +2,9 @@
   padding: 120px 20px;
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
   position: relative;
-  overflow: hidden;
+  /* Prevent mobile card shadows/edges from getting clipped */
+  overflow-x: hidden;
+  overflow-y: visible;
 }
 
 .background-gradient {
@@ -373,8 +375,9 @@
   line-height: 1.5;
 }
 
-.contact-info {
-  margin-bottom: 0;
+.admissions-section .contact-info {
+  /* Give space before the footer so the last cards don't feel cut */
+  margin-bottom: 60px;
 }
 
 .contact-grid {
