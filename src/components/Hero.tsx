@@ -51,7 +51,7 @@ const Hero: React.FC = () => {
             </div>
             <div className="stat-item">
               <span className="stat-number">25</span>
-              <span className="stat-label">Teachers (Pakistani Muslims)</span>
+              <span className="stat-label">Qualified Teachers</span>
             </div>
             <div className="stat-item">
               <span className="stat-number">100%</span>
