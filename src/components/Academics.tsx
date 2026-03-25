@@ -29,9 +29,9 @@ const Academics: React.FC = () => {
   ];
 
   const highlights = [
-    { value: "1000+", label: "Active Students" },
-    { value: "95%", label: "Board Results" },
-    { value: "50+", label: "Qualified Teachers" },
+    { value: "500", label: "Active Students" },
+    { value: "100%", label: "Board Results" },
+    { value: "25", label: "Teachers (Pakistani Muslims)" },
     { value: "15+", label: "Years of Excellence" }
   ];
 
