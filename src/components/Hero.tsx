@@ -46,16 +46,16 @@ const Hero: React.FC = () => {
           </div>
           <div className="hero-stats">
             <div className="stat-item">
-              <span className="stat-number">1000+</span>
-              <span className="stat-label">Students</span>
+              <span className="stat-number">500</span>
+              <span className="stat-label">Active Students</span>
             </div>
             <div className="stat-item">
-              <span className="stat-number">50+</span>
-              <span className="stat-label">Faculty</span>
+              <span className="stat-number">25</span>
+              <span className="stat-label">Teachers (Pakistani Muslims)</span>
             </div>
             <div className="stat-item">
-              <span className="stat-number">95%</span>
-              <span className="stat-label">Success Rate</span>
+              <span className="stat-number">100%</span>
+              <span className="stat-label">Board Results</span>
             </div>
           </div>
         </div>
